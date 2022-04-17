@@ -1,0 +1,29 @@
+.bank {
+    /* height: 100vh; */
+    background-color: rgb(255, 233, 194);
+}
+
+.label {
+    font-size: 2rem;
+}
+
+.divider {
+    width: 15%;
+    border: 1px solid orange;
+}
+
+.amount {
+    width: 15%;
+}
+
+.button {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid orange;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.7);
+}
+
+.button:hover {
+    transform: scale(1.1);
+}

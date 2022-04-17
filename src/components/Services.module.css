@@ -1,0 +1,32 @@
+.services {
+    height: 100vh;
+    background: linear-gradient(to right, #f2994a, #f2c94c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* box-shadow: inset -10px -10px 100px whitesmoke; */
+}
+
+.servicesCard:nth-child(2) {
+    transform: scale(1.05);
+    z-index: 1;
+    /* margin: 10px; */
+}
+
+.servicesCard:nth-child(2n + 1) {
+    transform: scale(1);
+    z-index: 0;
+    /* margin: 10px; */
+}
+
+.servicesCard {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid orange;
+    overflow: hidden;
+    width: 20%;
+    box-shadow: 0 1px 4px 0 black;
+    transition: all 0.5s ease-in-out;
+}
+
+.servicesCard:nth-child(2n + 1):hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
