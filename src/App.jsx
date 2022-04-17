@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Bank from './components/Bank';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Services from './components/Services';
 
@@ -31,6 +32,7 @@ function App() {
                     <Header scrollTo={scrollToService} key="header" />,
                     <Services request={parseRequest} scrollTo={scrollToBank} ref={serviceRef} key="services" />,
                     <Bank serviceRequest={service} ref={bankRef} key="bank" />,
+                    <Footer></Footer>,
                 ]}
             ></Route>
             {/* <Route path="services" element={[<Header />, <Services request={parseRequest} />]}></Route> */}
